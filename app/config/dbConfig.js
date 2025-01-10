@@ -1,13 +1,16 @@
-console.log("database host: ", process.env.DB_HOST);
-console.log("database user: ", process.env.DB_USER);
-console.log("database port: ", process.env.DB_PORT);
+require('dotenv').config();
+
+console.log("Database Config:");
+console.log("Host: ", process.env.DB_HOST);
+console.log("User: ", process.env.DB_USER);
+console.log("Port: ", process.env.DB_PORT);
 
 module.exports = {
-    database: process.env.DB_NAME,
-    username: process.env.DB_USER,
-    password: process.env.DB_PASSWORD,
-    host: process.env.DB_HOST,
-    port: process.env.DB_PORT,
+    database: process.env.DB_NAME || "railway",
+    username: process.env.DB_USER || "postgres",
+    password: process.env.DB_PASSWORD || "EakNsAOzFpNoyIuKcUkWHwoLDpLxZHOL",
+    host: process.env.DB_HOST || "postgres.railway.internal",
+    port: process.env.DB_PORT || 5432,
     dialect: "postgres",
     pool: {
         max: 5,
