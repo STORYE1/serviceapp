@@ -1,9 +1,9 @@
 {
     "development": {
-        "database": "railway",
+        "database": "provider_database",
         "username": "postgres",
-        "password": "EakNsAOzFpNoyIuKcUkWHwoLDpLxZHOL",
-        "host": "postgres.railway.internal",
+        "password": "1234",
+        "host": "localhost",
         "port": "5432",
         "dialect": "postgres",
         "pool": {
@@ -11,6 +11,20 @@
             "min": 0,
             "acquire": 30000,
             "idle": 10000
+        }
+    },
+    "production": {
+        "database": "railway",
+        "username": "postgres",
+        "password": "EakNsAOzFpNoyIuKcUkWHwoLDpLxZHOL",
+        "host": "postgres.railway.internal",
+        "port": "5432",
+        "dialect": "postgres",
+        "pool": {
+            "max": 10,
+            "min": 1,
+            "acquire": 30000,
+            "idle": 5000
         }
     }
 }
