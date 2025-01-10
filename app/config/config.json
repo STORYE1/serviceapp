@@ -1,9 +1,9 @@
 {
     "development": {
-        "database": "provider_database",
+        "database": "railway",
         "username": "postgres",
-        "password": "1234",
-        "host": "localhost",
+        "password": "EakNsAOzFpNoyIuKcUkWHwoLDpLxZHOL",
+        "host": "postgres.railway.internal",
         "port": "5432",
         "dialect": "postgres",
         "pool": {
